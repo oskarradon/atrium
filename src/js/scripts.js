@@ -19,7 +19,15 @@ function ajax(url) {
 		if (request.status >= 200 && request.status < 400) {
 			let resp = request.responseText;
 			let replacement = grabTag(resp, 'main');
-			fadeOutReplaceAndIn('main', 4000, replacement);
+			// fadeOutReplaceAndIn('main', 4000, replacement);
+			
+			// fade out current main div
+			anime({
+				targets: 'main',
+				opacity: 0,
+				duration: 4000,
+				complete: replacer('main', replacement)
+			});
 		}
 	};
 	request.send();
@@ -33,13 +41,8 @@ function grabTag (response, tag) {
 	return el.getElementsByTagName(tag)[0];
 }
 
-function fadeOutReplaceAndIn(tagName, duration, el) {
-	// fade out current main div
-	anime({
-		targets: tagName,
-		opacity: 0,
-		duration: duration
-	});
+	
+function replacer(tagName, el) {
 
 	// replace main div content
 	let body = document.getElementsByTagName('body')[0];
@@ -50,6 +53,6 @@ function fadeOutReplaceAndIn(tagName, duration, el) {
 	anime({
 		targets: tagName,
 		opacity: 1,
-		duration: duration
+		duration: 4000
 	});
 }
