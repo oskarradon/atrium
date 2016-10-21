@@ -18,22 +18,38 @@ function ajax(url) {
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			let resp = request.responseText;
-			grabTag(resp, 'main');
+			let replacement = grabTag(resp, 'main');
+			fadeOutReplaceAndIn('main', 4000, replacement);
 		}
 	};
 	request.send();
 }
 
-// fade out current main div
-
-
-// get main div from response
+// get main div from AJAX response
 function grabTag (response, tag) {
 	let el = document.createElement('html'); // creates dummy DOM element
 	el.innerHTML = response;
-	return el.getElementsByTagName(tag)[0];  
+	// console.log(el.getElementsByTagName(tag)[0]);
+	return el.getElementsByTagName(tag)[0];
 }
 
-// clear main div content
-// append to main
-// fade in 
+function fadeOutReplaceAndIn(tagName, duration, el) {
+	// fade out current main div
+	anime({
+		targets: tagName,
+		opacity: 0,
+		duration: duration
+	});
+
+	// replace main div content
+	let body = document.getElementsByTagName('body')[0];
+	let tag = document.getElementsByTagName(tagName)[0];
+	body.replaceChild(el, tag);
+
+	// fade in 
+	anime({
+		targets: tagName,
+		opacity: 1,
+		duration: duration
+	});
+}
