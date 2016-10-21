@@ -18,20 +18,22 @@ function ajax(url) {
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			let resp = request.responseText;
-			console.log(typeof(resp));
+			grabTag(resp, 'main');
 		}
 	};
 	request.send();
 }
 
 // fade out current main div
-// clear main div content
+
+
 // get main div from response
 function grabTag (response, tag) {
-	// create dummy DOM element
-	let el = document.createElement('html');
+	let el = document.createElement('html'); // creates dummy DOM element
 	el.innerHTML = response;
-	el.getElementsByTagName(tag)[1];
+	return el.getElementsByTagName(tag)[0];  
 }
+
+// clear main div content
 // append to main
 // fade in 
