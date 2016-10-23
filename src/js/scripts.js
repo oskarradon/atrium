@@ -19,7 +19,7 @@ function ajax(url) {
 		if (request.status >= 200 && request.status < 400) {
 			let resp = request.responseText;
 			let replacement = grabTag(resp, 'main');
-			replacer('main', 8000, replacement);
+			replacer('main', 4000, replacement);
 		}
 	};
 	request.send();
@@ -37,7 +37,7 @@ function grabTag (response, tag) {
 function replacer(tagName, dur, el) {
 	// fade out current main div
 	anime({
-		targets: 'main',
+		targets: tagName,
 		opacity: 0,
 		duration: dur
 	});
@@ -45,15 +45,16 @@ function replacer(tagName, dur, el) {
 		// replace main div content
 		let body = document.getElementsByTagName('body')[0];
 		let tag = document.getElementsByTagName(tagName)[0];
-		// tag.style.opacity = 0;
+		tag.style.opacity = 0;
 		body.replaceChild(el, tag);
-		
-		// fade in 
-		anime({
-			targets: tagName,
-			opacity: 1,
-			duration: dur
-		});
 	}, dur);
+
+	// fade in 
+		// anime({
+		// 	targets: tagName,
+		// 	opacity: 1,
+		// 	duration: dur,
+		// 	delay: dur * 2
+		// });
 	
 }
