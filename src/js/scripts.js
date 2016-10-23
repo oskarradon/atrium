@@ -1,13 +1,17 @@
-// Use AJAX to load in content from links without changing pages
+let duration = 2000;
+
 $(function(){
 	$(document).on('click', 'a', function(e) {
 		e.preventDefault();
 		let href = this.getAttribute("href");
-		console.log(href);
-		$('main').fadeOut('slow', function() {
-			$('main').load(href + ' main > *');
-			console.log(href);
-			$('main').fadeIn('slow');
-		})
-	})
-})
+		$.ajax({url: href});
+		if (window.location.pathname === href) {
+			return;
+		} else {
+			$('main').fadeOut(duration, function() {
+				$('main').load(href + ' main > *');
+				$('main').fadeIn(duration);
+			});
+		}	
+	});
+});
