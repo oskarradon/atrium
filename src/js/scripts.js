@@ -3,8 +3,7 @@
 $('a').click(function(e){
 	e.preventDefault();
 	let href = this.getAttribute("href");
-	$('main').fadeOut('slow', function(href) {
-		console.log(href);
+	$('main').fadeOut('slow', function() {
 		$('main').load(href + ' main > *');
 		$('main').fadeIn('slow');
 	})
