@@ -36,24 +36,24 @@ function grabTag (response, tag) {
 	
 function replacer(tagName, dur, el) {
 	// fade out current main div
+	anime({
+		targets: 'main',
+		opacity: 0,
+		duration: dur
+	});
+	setTimeout(function(){ 
+		// replace main div content
+		let body = document.getElementsByTagName('body')[0];
+		let tag = document.getElementsByTagName(tagName)[0];
+		// tag.style.opacity = 0;
+		body.replaceChild(el, tag);
+		
+		// fade in 
 		anime({
-			targets: 'main',
-			opacity: 0,
-			duration: dur,
-			complete: () => {
-				// replace main div content
-				let body = document.getElementsByTagName('body')[0];
-				let tag = document.getElementsByTagName(tagName)[0];
-				// tag.style.opacity = 0;
-				body.replaceChild(el, tag);
-				
-				// fade in 
-				anime({
-					targets: tagName,
-					opacity: 1,
-					duration: dur
-				});
-			}
+			targets: tagName,
+			opacity: 1,
+			duration: dur
 		});
-
+	}, dur);
+	
 }
