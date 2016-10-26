@@ -1,4 +1,4 @@
-let duration = 2000;
+let duration = 800;
 
 $(function(){
 	$(document).on('click', 'a', function(e) {
@@ -6,7 +6,7 @@ $(function(){
 		let href = this.getAttribute("href");
 		$('main').fadeOut(duration, function() {
 			$('main').load(href + ' main > *');
-			$('main').fadeIn(duration);
+			$('main').fadeIn(duration + 800);
 		})
 	})
 })
