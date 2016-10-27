@@ -1,17 +1,18 @@
 // VARIABLES
 
-var gulp                    = require('gulp');
-var sass                    = require('gulp-sass');
-var sourcemaps              = require('gulp-sourcemaps');
-var autoprefixer            = require('gulp-autoprefixer');
-var imagemin                = require('gulp-imagemin');
-var cssmin                  = require('gulp-cssmin');
-var concat                  = require('gulp-concat');
-var uglify                  = require('gulp-uglify');
-var rename					        = require('gulp-rename');
-var babel                   = require('gulp-babel');
-var browserSync             = require('browser-sync');
-var reload                  = browserSync.reload;
+const gulp                    = require('gulp');
+const sass                    = require('gulp-sass');
+const sourcemaps              = require('gulp-sourcemaps');
+const autoprefixer            = require('gulp-autoprefixer');
+const imagemin                = require('gulp-imagemin');
+const fontmin                 = require('gulp-fontmin');
+const cssmin                  = require('gulp-cssmin');
+const concat                  = require('gulp-concat');
+const uglify                  = require('gulp-uglify');
+const rename					        = require('gulp-rename');
+const babel                   = require('gulp-babel');
+const browserSync             = require('browser-sync');
+const reload                  = browserSync.reload;
 
 
 // TASKS
@@ -30,8 +31,8 @@ gulp.task('scss', function() {
 	.pipe(autoprefixer())
 	.pipe(cssmin())
 	.pipe(rename({
-        suffix: '.min'
-    }))
+    suffix: '.min'
+  }))
 	.pipe(gulp.dest('dist/css'))
 });
 
