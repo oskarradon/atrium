@@ -1,0 +1,13 @@
+@import '_mixins';
+
+.bg-one {
+	@include bg(url(../assets/img/hive.jpg), .2);
+}
+
+.bg-three {
+	@include bg(url(../assets/img/slow2.gif), .3);
+}
+
+.bg-two {
+  @include bg(linear-gradient(bottom right, #ffc599, #fff6d1), .7)
+}
