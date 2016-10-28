@@ -1,12 +1,11 @@
-.one {
-	background: url(../assets/img/1.jpg) no-repeat center center fixed;
-	background-size: cover;
+@import '_mixins';
+
+.bg-one {
+	@include bg(url(../assets/img/1.jpg));
 }
 
-.two {
-	background: url(../assets/img/2.jpg) no-repeat center center fixed;
-	background-size: cover;
-	opacity: .3;
+.bg-two {
+	@include bg(url(../assets/img/2.jpg), .3)
 }
 
 .img-container {
