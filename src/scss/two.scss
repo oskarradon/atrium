@@ -3,3 +3,13 @@
 .bg-one {
 	@include bg(url(../assets/img/3.jpg), 1, top center);
 }
+
+.img-container a {
+	margin: 70vh auto 0;
+	position: relative;
+}
+
+.circle {
+  height: 100px;
+  position: relative;
+}
