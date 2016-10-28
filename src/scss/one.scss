@@ -15,17 +15,13 @@
 	}
 }
 
-@keyframes blink {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
-
 .merlin {
 	height: 200px;
 	margin: 30vh auto 0;
 	position: relative;
 	filter: blur(3px);
 	transition: .5s;
+	cursor: help;
 	&:hover {
 		filter: blur(0px);
 		transition: .5s;
@@ -33,22 +29,36 @@
 }
 
 .burst {
+	position: absolute;
+	right: 0px;
 	width: 50px;
-	left: calc(100vw - 50px);
+	height: 50px;
+	z-index: 9999;
 	@media (min-width: 900px) {
-		width: 300px;
-		left: calc(100vw - 300px);
+		width: 200px;
+	}
+	img {
+		width: inherit;
 	}
 }
 
 .sun {
-	height: 100px;
-	top: calc(100vh - 120px);
+	position: absolute;
+	width: 100px;
+	bottom: 20px;
 	left: 20px;
 	animation: pulse 1s ease-in-out alternate infinite;
+	img {
+		width: inherit;
+	}
 }
 
 @keyframes pulse {
 	from { transform: scale(1); }
 	to { transform: scale(1.1); }
+}
+
+@keyframes blink {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
