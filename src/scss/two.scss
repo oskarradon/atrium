@@ -1,0 +1,5 @@
+@import '_mixins';
+
+.bg-one {
+	@include bg(url(../assets/img/3.jpg), 1, top center);
+}
