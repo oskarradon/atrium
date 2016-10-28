@@ -1,0 +1,9 @@
+@import '_mixins';
+
+.bg-one {
+	@include bg(url(../assets/img/four.jpg));
+}
+
+header {
+  color: white;
+}
