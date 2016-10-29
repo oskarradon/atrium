@@ -11,3 +11,30 @@
 .bg-two {
   @include bg(linear-gradient(bottom right, #ffc599, #fff6d1), .7)
 }
+
+body {
+	overflow: hidden;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+}
+
+.img-container {
+	flex-wrap: wrap;
+	max-width: 800px;
+	position: relative;
+	margin: 150px auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	img {
+		width: 105px;
+		height: 105px;
+		@media (min-width: 800px) {
+			width: 200px;
+			height: 200px;
+		}
+	}
+}
