@@ -1,1 +1,9 @@
-@import '_nav';
+@import "_nav";
+@import "_fonts";
+
+body {
+  font-family: "Asea", serif;
+  background: url(../assets/01/39-shell-mouth-rightsized.jpg) top center;
+  // background-size: contain;
+  background-repeat: no-repeat;
+}
