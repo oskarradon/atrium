@@ -1,4 +1,8 @@
-@import 'nav';
+@import '_nav';
+
+#petal-left {
+  opacity: 0;
+}
 
 video {
   position: fixed;
