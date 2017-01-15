@@ -22,8 +22,13 @@ section {
 }
 
 #owl {
+  position: absolute;
+  top: 160px;
+  right: 60px;
   width: 50px;
-  margin-left: 30px;
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 500px) {
     width: 75px;
   }
