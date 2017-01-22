@@ -2,10 +2,48 @@
 <html>
 <head>
   <title>Atrium of the Sun</title>
-  <link rel="stylesheet" href="css/01.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
+<style media="screen">
+  section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -49px;
+  }
+
+  #svalbard {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 175px;
+  }
+
+  #owl {
+    position: absolute;
+    top: 160px;
+    right: 60px;
+    width: 50px;
+  }
+  #owl:hover {
+    cursor: pointer;
+  }
+  @media (min-width: 500px) {
+    #owl {
+      width: 75px;
+    }
+  }
+
+  #grow {
+    position: absolute;
+    top: 0px;
+  }
+  #grow .text {
+    margin: 1em;
+  }
+</style>
 <body>
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
   <nav>

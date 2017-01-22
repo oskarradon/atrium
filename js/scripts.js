@@ -16,6 +16,12 @@ function placeTextDiv() {
   var growDiv = document.getElementById('grow');
   var rect = img.getBoundingClientRect();
   growDiv.style.top = rect.top + rect.height + 'px';
+  console.log(img.style);
+  // if (img.style.right) {
+  //   growDiv.style.right = img.style.right;
+  // } else {
+  //   // growDiv.style.right = rect.right + 'px';
+  // }
 }
 
 placeTextDiv();
