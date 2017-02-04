@@ -1,8 +1,11 @@
 $(function() {
   $(".revealer").click(function() {
-    $(".typed").typed({
-      stringsElement: $('.typed-strings'),
-      showCursor: false,
-    });
+    if (!$(".typed").hasClass("showing")) {
+      $(".typed").typed({
+        stringsElement: $('.typed-strings'),
+        showCursor: false,
+      });
+      $(".typed").addClass("showing");
+    }
   });
 });

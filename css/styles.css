@@ -1,11 +1,6 @@
-@font-face {
-  font-family: 'Asea';
-  src:  url('../assets/fonts/AseaR.ttf') format('ttf'),
-        url('../assets/fonts/AseaR.woff') format('woff');
-}
-
 body, html {
-  font-family: "Asea", serif;
+  font-family: "Monaco", monospace;
+  font-size: 14px;
   height: 100%;
 }
 
