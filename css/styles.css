@@ -46,6 +46,10 @@ nav #petal-right {
   transform: translate(-50%, -50%);
 }
 
+.revealer:hover {
+  cursor: pointer;
+}
+
 .typed {
   position: absolute;
   top: 0px;
