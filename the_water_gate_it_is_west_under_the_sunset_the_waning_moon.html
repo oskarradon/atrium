@@ -36,14 +36,6 @@
       width: 75px;
     }
   }
-
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
-  }
 </style>
 <body>
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
@@ -60,15 +52,14 @@
     </div>
   </section>
   <img src="assets/01/1-lil-catalhayuk.jpg" alt="she has been there all along" id="shehasalwaysbeenthere" class="revealer">
-  <div id="grow">
-    <div class="measuringWrapper">
-      <p class="text">
-       This hidden history, there beyond the Water Gate. Waits.
-      </p>
-    </div>
+  <div class="typed-strings">
+    <p>This hidden history, there beyond the Water Gate. Waits.</p>
   </div>
+  <span class="typed"></span>
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>

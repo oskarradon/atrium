@@ -1,27 +1,14 @@
 var img = document.getElementsByClassName('revealer')[0];
 
-img.addEventListener("click", growDiv);
+img.addEventListener("click", typeItOut);
 
-function growDiv() {
-  var growDiv = document.getElementById('grow');
-  if (growDiv.clientHeight) {
-    growDiv.style.height = 0;
-  } else {
-    var wrapper = document.querySelector('.measuringWrapper');
-    growDiv.style.height = wrapper.clientHeight + "px";
-  }
+// Show text
+function typeItOut() {
+  console.log("hi");
+  $(function() {
+    $(".typed").typed({
+      stringsElement: $('.typed-strings'),
+      showCursor: false,
+    });
+  });
 }
-
-function placeTextDiv() {
-  var growDiv = document.getElementById('grow');
-  var rect = img.getBoundingClientRect();
-  growDiv.style.top = rect.top + rect.height + 'px';
-  console.log(img.style);
-  // if (img.style.right) {
-  //   growDiv.style.right = img.style.right;
-  // } else {
-  //   // growDiv.style.right = rect.right + 'px';
-  // }
-}
-
-placeTextDiv();
