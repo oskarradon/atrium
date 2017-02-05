@@ -37,22 +37,14 @@
     right: 60px;
     width: 50px;
   }
-  #cometfriend:hover {
-    cursor: pointer;
-  }
+  
   @media (min-width: 500px) {
     #cometfriend {
       width: 300px;
     }
   }
 
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
-  }
+  
 
 </style>
 
@@ -65,9 +57,7 @@
   </nav>
 
   <img src="assets/54/54-ground.jpg" class="bg">
-<!--i had to comment this out. I want it small and over to the right. and I want it to call up text. but when I put it in, it makes the gif disappear.
-<img src="assets/comet-illustrations/comet67p-6-white.png" alt="a deeper overstanding" class="cometfriend">
--->
+
  <section>
     <div>
     	<img src="assets/54/54-dna.gif">
@@ -76,17 +66,17 @@
   </section>  
   
    <img src="assets/comet-illustrations/comet67p-6-white.png" alt="" id="cometfriend" class="revealer">
-  <div id="grow">
-    <div class="measuringWrapper">
-      <p class="text">
-        a deeper overstanding
-      </p>
-    </div>
-  </div>
-
-
+ 
+    <div class="typed-strings">
+    <p>a deeper overstanding 
+    </p> 
+ </div>
+  <span class="typed"></span>
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
+
 </body>
 </html>

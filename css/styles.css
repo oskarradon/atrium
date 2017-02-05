@@ -47,5 +47,8 @@ nav #petal-right {
 
 .typed {
   position: absolute;
-  top: 20px;
+  top: 100px;
+  background: #ffffff;
+  background: rgba(255,255,255,0.5);
+}
 }

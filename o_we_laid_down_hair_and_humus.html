@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atrium of the Sun: o we laid down hair and humus</title>
+  <title>o we laid down hair and humus : Atrium of the Sun </title>
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -23,28 +23,23 @@
     
   }
 
-  #owl {
+
+
+ #humus {
     position: absolute;
     top: 200px;
     right: 60px;
     width: 50px;
   }
-  #owl:hover {
-    cursor: pointer;
-  }
+ 
   @media (min-width: 500px) {
-    #owl {
-      width: 300px;
+    #humus {
+      width: 75px;
     }
   }
 
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
-  }
+
+
 </style>
 <body>
 	
@@ -60,18 +55,21 @@
   
   <img src="assets/comet-illustrations/comet67p-3-white.png">
   
-  <div id="grow">
-    <div class="measuringWrapper">
-      <p class="text">
-        o we laid down hair and humus / <br />
-        and with hoary tendrils reach / <br />
+  <img src="assets/16/16-humus-small.jpg" id="humus" class="revealer">
+  
+  <div class="typed-strings">
+    <p>
+        o we laid down hair and humus <br />
+        and with hoary tendrils reach <br />
         
-      </p>
-    </div>
+    </p>
   </div>
-
+  
+  <span class="typed"></span>
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>

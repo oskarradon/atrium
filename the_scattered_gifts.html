@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atrium of the Sun: the scattered gifts</title>
+  <title>the scattered gifts : Atrium of the Sun</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,34 +16,17 @@
     margin-left: 100px
   }
 
-  #bennu {
-    width: 25vw;
-    max-width: 250;
-    min-width: 175px;
-    
-  }
-
-  #owl {
+  #seeds {
     position: absolute;
-    top: 200px;
+    top: 150px;
     right: 60px;
     width: 50px;
   }
-  #owl:hover {
-    cursor: pointer;
-  }
+ 
   @media (min-width: 500px) {
-    #owl {
-      width: 300px;
+    #seeds {
+      width: 75px;
     }
-  }
-
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
   }
 </style>
 <body>
@@ -66,16 +49,21 @@
     </div>
   </section>
   
-  <div id="grow">
-    <div class="measuringWrapper">
-      <p class="text">
-        
-      </p>
-    </div>
+   <img src="assets/15/15-Seeds1.jpg" alt="here the seeds" id="seeds" class="revealer">
+  <div class="typed-strings">
+    <p>
+	    to the four winds<br />
+	    and buried <br />
+	    dust become soil become stone <br />
+	    and inlaid there
+    </p>
   </div>
-
+  <span class="typed"></span>
+  
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>
