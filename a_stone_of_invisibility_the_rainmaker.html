@@ -16,24 +16,25 @@
   }
 
   #theemergence {
+    position: absolute;
+    top: 150px;
+    left: 25vw;
     width: 200vw;
     max-width: 200px;
     min-width: 100px;
-    margin-top: 100px;
-    margin-left: 400px;
-    
+    z-index: 99;
   }
-  
+
   #bone {
 	  animation: fadey 4s infinite alternate;
-	  
+    margin: 50px auto;
   }
 
   @keyframes fadey {
 	  0% {opacity: 0}
 	  100% {opacity: .5}
   }
- 
+
 </style>
 <body>
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
@@ -42,18 +43,19 @@
     <a href="/index.html"><img src="assets/nav/homestone.png" alt="Home" id="homestone"></a>
     <a href="/caterpillars_of_the_glass_jewel.html"><img src="assets/nav/petal-right.png" alt="Forward" id="petal-right"></a>
   </nav>
-  
+
   <img src="assets/08/08-background-edelweiss-bryce.jpg" alt="" class="bg">
-  
-    
+
+
    <img src="assets/08/seeder.jpg" alt="seeder" id="theemergence" class="revealer">
 
+<section>
+  <img src="assets/comet-illustrations/comet67p-10.png" id="bone">
+</section>
 
-<img src="assets/comet-illustrations/comet67p-10.png" id="bone">
 
- 
   <div class="typed-strings">
-    <p>it did not come as a rain<br /> 
+    <p>it did not come as a rain<br />
 	 but as a breath<br />
 	 slight vaporous <br />
 	 cloud as yet to resolve into</p>
