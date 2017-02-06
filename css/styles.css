@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  width: 134px;
+  width: 138px;
   margin: 5px auto 0;
 }
 
@@ -51,4 +51,7 @@ nav #petal-right {
   background: #ffffff;
   background: rgba(255,255,255,0.5);
 }
+
+.typed-strings {
+	display: none;
 }
