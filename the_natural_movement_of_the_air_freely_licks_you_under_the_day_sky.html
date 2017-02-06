@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atrium of the Sun: the natural movement of the air freely licks you under the day sky</title>
+  <title>the natural movement of the air freely licks you under the day sky : Atrium of the Sun</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -14,12 +14,28 @@
     align-items: right;
     height: 100vh;
     margin-top: 200px;
+    margin-left: 100px;
   }
 
   #rosemary {
     width: 50vw;
     max-width: 320px;
     min-width: 175px;
+  }
+  
+  #key {
+  position: absolute;
+  margin-top: 150;
+  width: 10vw;
+  right: 60px;
+  }
+  
+  #cometfriend {
+	 position: absolute;
+	 width: 100vw;
+    max-width: 600px;
+    min-width: 175px;
+    left: 300px;
   }
 </style>
 
@@ -32,6 +48,10 @@
   </nav>
 
   <img src="assets/46/46-memory.jpg" class="bg">
+  
+  <img src="assets/comet-illustrations/comet67p-2.png" id="cometfriend">
+
+ <img src="assets/46/microchip.gif" id="key" class="revealer">
 
  <section>
     <div>
@@ -41,10 +61,17 @@
     </div>
   </section>  
   
-  
-
+  <div class="typed-strings">
+    <p>in near stillness<br />
+	    an exhalation<br />
+	     
+	      
+ </div>
+  <span class="typed"></span>
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>

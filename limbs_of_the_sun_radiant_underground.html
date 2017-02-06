@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Atrium of the Sun: limbs of the sun radiant under ground</title>
+  <title>limbs of the sun radiant under ground : Atrium of the Sun</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,36 +16,28 @@
     margin-left: 100px
   }
 
-  #bennu {
-    width: 25vw;
-    max-width: 250;
+  
+  #rosemary {
+    width: 50vw;
+    max-width: 320px;
     min-width: 175px;
-    
   }
 
-  #owl {
-    position: absolute;
-    top: 200px;
-    right: 60px;
-    width: 50px;
+  #key {
+  position: absolute;
+  margin-top: 150;
+  width: 10vw;
+  left: 60px;
   }
-  #owl:hover {
-    cursor: pointer;
+  
+  #cometfriend {
+	 position: absolute;
+	 width: 100vw;
+    max-width: 600px;
+    min-width: 175px;
+    left: 300px;
   }
-  @media (min-width: 500px) {
-    #owl {
-      width: 300px;
-    }
-  }
-
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
-  }
-</style>
+  </style>
 <body>
 	
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
@@ -58,18 +50,28 @@
   
   <img src="assets/17/17-pocket.jpg" alt="" class="bg">
   
-  <img src="assets/17/17-glow-rightsized.jpg" alt="here a glow as a promise">
+  <img src="assets/17/17-glow-rightsized.jpg" alt="here a glow as a promise" id="key" class="revealer">
+  
+  <img src="assets/comet-illustrations/comet67p-5.png" id="cometfriend">
   
   <section>
     <div>
-    	<video width="320" height="240" autoplay loop class="rosemary">
+    	<video width="320" height="240" autoplay loop muted class="rosemary">
 		<source src="assets/17/17-Time%20Lapse%20of%20Root%20Growth.mp4" type="video/mp4">
   		</video>
     </div>
   </section> 
 
+  <div class="typed-strings">
+    <p>here it is a promise<br />
+	   in a pocket
+    </p>
+  </div>
+  <span class="typed"></span>
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>

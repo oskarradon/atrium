@@ -5,7 +5,35 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
 </head>
+
+<style media="screen">
+  section {
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    margin-top: 200px;
+    margin-left: 200px;
+  }
+
+	#milfoil {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 80px;
+  }
+ 
+  @media (min-width: 500px) {
+    #milfoil {
+      width: 75px;
+    }
+  }
+
+ 
+</style>
+
 <body>
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
   <nav>
@@ -15,9 +43,25 @@
   </nav>
 
   <img src="assets/45/45-voynich-yarrow.jpg" class="bg">
-
+  
+  <img src="assets/45/milfoil.png" id="milfoil" class="revealer">
+  
+    <div class="typed-strings">
+      <p>
+	  line pockets then<br />
+	  the thousand weed <br />
+	  its vulnerary promise<br />
+	  fortification against imaginings<br />
+	  know its dusty fragrance<br />
+	  know the field   <br />
+      </p>
+    </div>
+  <span class="typed"></span>
+  
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/scripts.js"></script>
   </footer>
 </body>
 </html>
