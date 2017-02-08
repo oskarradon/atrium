@@ -7,98 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <style media="screen">
-	
 	body {
 		background: black;
 	}
-  section {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: -49px;
-  }
-
-  #blossom {
-    width: 40vw;
-    max-width: 100px;
-    min-width: 60px;
-    bottom: 100px;
-    position: fixed;
-  }
-
-  #heart {
-    position: absolute;
-    top: 150px;
-    left: 500px;
-    width: 150px;
-  }
-  #heart:hover {
-    cursor: pointer;
-  }
-  @media (min-width: 500px) {
-    #heart {
-      width: 200px;
-    }
-  }
-  #owl {
-    position: absolute;
-    top: 160px;
-    right: 60px;
-    width: 50px;
-  }
-  #owl:hover {
-    cursor: pointer;
-  }
-  @media (min-width: 500px) {
-    #owl {
-      width: 75px;
-    }
-  }
-
- #lepidoptera {
-    width: 10vw;
-    max-width: 320px;
-    min-width: 175px;
-    position: fixed; 
-    right: 0px;
-    
-
-  }
-
-  #grow {
-    position: absolute;
-    top: 0px;
-  }
-  #grow .text {
-    margin: 1em;
-  }
 </style>
 <body>
-	
+
   <a href="/about.html"><img src="assets/nav/egg.png" alt="About" id="egg"></a>
   <nav>
     <a href="/the_stone_called_the_sunmoon_encased_in_silver_on_a_golden_cord.html"><img src="assets/nav/petal-left.png" alt="Back" id="petal-left"></a>
     <a href="/index.html"><img src="assets/nav/homestone.png" alt="Home" id="homestone"></a>
     <a href="/bled_from_the_bark.html"><img src="assets/nav/petal-right.png" alt="Forward" id="petal-right"></a>
   </nav>
-   
-            
-     <div id="grow">
-    <div class="measuringWrapper">
-      <p class="text">
-       when the moon through the center and coupled with the sun<br />
-        <br />
-       
-       
-      </p>
-    </div>
-  </div>
-   
-       
- 
   <footer>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var audio = new Audio('assets/sounds/atrium_sound_03.mp3');
+        audio.play();
+      });
+    </script>
   </footer>
 </body>
 </html>
