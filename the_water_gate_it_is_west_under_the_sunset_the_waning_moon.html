@@ -25,6 +25,10 @@
     left: 200px;
   }
 
+  #rock:hover {
+    cursor: pointer;
+  }
+
   #shehasalwaysbeenthere {
     position: absolute;
     top: 80px;
@@ -65,6 +69,20 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var audio = new Audio('assets/sounds/atrium_sound_04.mp3');
+        $('#rock').click(function() {
+          if (!$('#rock').hasClass('playing')) {
+            audio.play();
+            $('#rock').addClass('playing');
+          } else {
+            audio.pause();
+            $('#rock').removeClass('playing');
+          }
+        });
+      });
+    </script>
   </footer>
 </body>
 </html>
